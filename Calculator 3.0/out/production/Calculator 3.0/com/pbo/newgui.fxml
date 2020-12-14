@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="328.0" prefWidth="314.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pbo.Controller">
+   <top>
+      <ToolBar prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: black;" BorderPane.alignment="CENTER">
+        <items>
+          <Button fx:id="close" alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#klikClose" style="-fx-background-color: #696969;" text="Close" textFill="WHITE">
+               <font>
+                  <Font name="Bauhaus 93" size="12.0" />
+               </font>
+            </Button>
+        </items>
+      </ToolBar>
+   </top>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="314.0" style="-fx-background-color: #FF8C00;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox layoutX="14.0" layoutY="55.0" prefHeight="59.0" prefWidth="193.0">
+               <children>
+                  <Button fx:id="sembilan" mnemonicParsing="false" onAction="#tombolAngka" prefHeight="59.0" prefWidth="64.0" text="9">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="delapan" mnemonicParsing="false" onAction="#tombolAngka" prefHeight="59.0" prefWidth="64.0" text="8">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="tujuh" mnemonicParsing="false" onAction="#tombolAngka" prefHeight="59.0" prefWidth="64.0" text="7">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox layoutX="14.0" layoutY="115.0" prefHeight="59.0" prefWidth="193.0">
+               <children>
+                  <Button fx:id="enam" mnemonicParsing="false" onAction="#tombolAngka" prefHeight="59.0" prefWidth="64.0" text="6">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="lima" mnemonicParsing="false" onAction="#tombolAngka" prefHeight="59.0" prefWidth="64.0" text="5">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="empat" mnemonicParsing="false" onAction="#tombolAngka" prefHeight="59.0" prefWidth="64.0" text="4">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox layoutX="14.0" layoutY="174.0" prefHeight="64.0" prefWidth="193.0">
+               <children>
+                  <Button fx:id="tiga" mnemonicParsing="false" onAction="#tombolAngka" prefHeight="59.0" prefWidth="64.0" text="3">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="dua" mnemonicParsing="false" onAction="#tombolAngka" prefHeight="59.0" prefWidth="64.0" text="2">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="satu" mnemonicParsing="false" onAction="#tombolAngka" prefHeight="59.0" prefWidth="64.0" text="1">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <VBox layoutX="224.0" layoutY="55.0" prefHeight="222.0" prefWidth="76.0">
+               <children>
+                  <Button fx:id="bagi" mnemonicParsing="false" onAction="#tombolOperan" prefHeight="60.0" prefWidth="71.0" text="/">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="kali" mnemonicParsing="false" onAction="#tombolOperan" prefHeight="60.0" prefWidth="71.0" text="x">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="kurang" mnemonicParsing="false" onAction="#tombolOperan" prefHeight="60.0" prefWidth="71.0" text="-">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="tambah" mnemonicParsing="false" onAction="#tombolOperan" prefHeight="60.0" prefWidth="71.0" text="+">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+            <HBox layoutX="14.0" layoutY="240.0" prefHeight="28.0" prefWidth="193.0">
+               <children>
+                  <Button fx:id="reset" mnemonicParsing="false" onAction="#tombolReset" prefHeight="59.0" prefWidth="64.0" text="Reset">
+                     <font>
+                        <Font name="Bauhaus 93" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="nol" mnemonicParsing="false" onAction="#tombolAngka" prefHeight="59.0" prefWidth="64.0" text="0">
+                     <font>
+                        <Font name="Bauhaus 93" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="samaDengan" mnemonicParsing="false" onAction="#tombolOperan" prefHeight="59.0" prefWidth="64.0" text="=">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eeca7d" height="36.0" layoutX="14.0" layoutY="9.0" stroke="BLACK" strokeType="INSIDE" width="280.0" />
+            <Text fx:id="output" layoutX="143.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
