@@ -2,7 +2,7 @@
 My first completed GUI Application, build with JavaFX
 
 > Requirements
-- Any versions of JDK except 8.
+- Any versions of JDK.
 - JavaFX SDK LTS 11.0.9
 - Scene Builder
 
